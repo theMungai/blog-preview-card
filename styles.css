@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--yellow);
+    font-family: "Figtree";
+}
+
+.container {
+    width: 23%;
+    height: auto;
+    background-color: var(--white);
+    border: 1px solid var(--gray-950) ;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0px var(--gray-950);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.image-display img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.article{
+    padding: 0px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.learning{
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    font-weight: 800;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.published{
+    color: var(--gray-950);
+    padding: 10px 0px;
+}
+
+.topic-header{
+    color: var(--gray-950);
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    text-decoration: none;
+
+}
+
+.topic-header:active{
+    color: var(--yellow);
+}
+
+.article-paragraph{
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    padding: 10px 0px;
+    line-height: 1.6rem;
+}
+
+.author-profile {
+    display: flex;
+    align-items: center;
+}
+
+.author-name{
+    font-weight: 800;
+    padding: 0px 15px;
+}
+
+.attribution { 
+    font-size: 12.5px; 
+    text-align: center; 
+    position: fixed;
+    font-weight: 600;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* =====================Media Queries ===================== */
+/* =====================Mobile Devices ==================== */
+
+@media (max-width: 480px){
+    .container{
+    width: 90%;
+    }
+
+}
+
+
+/* =====================Small Devices ==================== */
+@media (min-width: 481px) and (max-width:767px){
+    .container{
+    width: 90%;
+    }
+
+}
+
+/* =====================Medium Devices ==================== */
+@media (min-width: 768px) and (max-width:991px){
+    .container{
+    width: 90%;
+    }
+
+}
